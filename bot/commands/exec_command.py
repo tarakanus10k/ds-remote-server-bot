@@ -1,3 +1,5 @@
+# команда !exec для запуска на сервере
+
 import discord
 from discord.ext import commands
 from config import CONFIG

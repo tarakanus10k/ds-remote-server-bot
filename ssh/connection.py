@@ -1,3 +1,5 @@
+# менеджер SSH-подключений
+
 import paramiko
 from config import CONFIG
 

@@ -1,3 +1,5 @@
+ # функция выполнения команды на сервере
+
 import asyncio
 from ssh.connection import GET_SSH_CLIENT, CONNECT
 

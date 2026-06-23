@@ -1,3 +1,5 @@
+# точка входа, запуск бота
+
 import asyncio
 from bot.client import CREATE_BOT
 from config import CONFIG

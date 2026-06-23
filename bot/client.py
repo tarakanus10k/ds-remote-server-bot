@@ -1,3 +1,5 @@
+# создание и настройка клиента
+
 import discord
 from discord.ext import commands
 from config import CONFIG
