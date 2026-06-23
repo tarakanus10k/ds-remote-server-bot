@@ -12,7 +12,7 @@ async def RUN_REMOTE_COMMAND(command: str):
 
         out = await asyncio.to_thread(stdout.read)
         err = await asyncio.to_thread(stderr.read)
-        exit_status = stdout.channel.recv_exit_status()
+        exit_status = await asyncio.to_thread(stdout.channel.recv_exit_status)
         result = out.decode("utf-8", errors="replace")
 
         if err:

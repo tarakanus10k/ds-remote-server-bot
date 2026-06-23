@@ -9,7 +9,7 @@ def GET_SSH_CLIENT():
     return client
 
 def CONNECT(client: paramiko.SSHClient):
-    connextion_data = {
+    connection_data = {
         "hostname": CONFIG.SSH_HOST,
         "port": CONFIG.SSH_PORT,
         "username": CONFIG.SSH_USER,
@@ -17,4 +17,4 @@ def CONNECT(client: paramiko.SSHClient):
         "password": CONFIG.SSH_PASSWORD,
     }
 
-    client.connect(**connextion_data)
+    client.connect(**connection_data)
