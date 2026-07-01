@@ -18,5 +18,4 @@ class CONFIG:
     ssh_password: str = field(default_factory=lambda: os.getenv("SSH_PASSWORD"))
     ssh_key_path: str = field(default_factory=lambda: os.getenv("SSH_KEY_PATH"))
     ssh_passphrase: str = field(default_factory=lambda: os.getenv("SSH_PASSPHRASE"))
-
-config = CONFIG()
+    ssh_timeout: int = field(default_factory=lambda: int(os.getenv("SSH_TIMEOUT", "30")))
